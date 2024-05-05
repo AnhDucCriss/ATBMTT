@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Modular {
 	public static int calcExponent(int a, int b, int n) {
-		String binaryB = Integer.toBinaryString(b);
+		String binaryB = Integer.toBinaryString(b);//khai báo biến để tách b về dạng nhị phân
 		int f=1;
 		for(int i=0;i< binaryB.length();i++) {
 			f = (f*f) % n;
