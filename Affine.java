@@ -41,16 +41,16 @@ public class Affine {
 
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
-		System.out.println("Nhap message:");
+		System.out.println("Nhập bản rõ:");
 		String msg = scanner.nextLine();
 		String cipherText = encrypt(msg);
-		System.out.println("Encrypted Message is: " + cipherText);
+		System.out.println("Bản mã hóa: " + cipherText);
 		String decryptedText = decrypt(cipherText);
-		System.out.println("Decrypted message is: " + decryptedText);
-		System.out.print("Nhap test: ");
+		System.out.println("Bản giải mã: " + decryptedText);
+		System.out.print("Nhập test: ");
 		String test = scanner.nextLine();
 		if (test.equals(decryptedText)) {
-			System.out.println("Dung");
+			System.out.println("Đúng");
 		} else {
 			System.out.println("Sai");
 		}
